@@ -33,6 +33,8 @@
             'secondary-color': '#707070',
             'white': '#ffffff',
             'banner-white': '#E7E7E7',
+            'bg-footer': '#111111',
+            'footer-text': '#CFCFCF',
           }
         }
       }
@@ -97,7 +99,7 @@
     <!-- Hero Section -->
     <section class="p-2">
       <div class="hero rounded-lg overflow-hidden" style="background-image: url(/images/banner.png);">
-        <div class="hero-overlay bg-opacity-30"></div>
+        <div class="hero-overlay bg-opacity-70"></div>
         <div class="hero-content text-white text-center py-24">
           <div class="md:w-3/5 mx-auto space-y-10">
             <h1 class="text-4xl mb:text-5xl lg:text-7xl font-semibold font-garamond">We Provide Effective Legal
@@ -368,8 +370,8 @@
             <figure class="px-10 pt-10">
               <img src="/images/location.png" alt="Shoes" class="rounded-xl" />
             </figure>
-            <div class="card-body items-center text-center p-4 mt-4">
-              <h2 class="card-title text-lg md:text-xl font-medium">Address</h2>
+            <div class="card-body items-center text-center px-4 pb-12 md:mt-4">
+              <h2 class="card-title text-lg md:text-xl font-semibold font-garamond">Address</h2>
               <p class="text-sm md:text-base text-secondary-color md:mb-6">A108 Adam Street, <br>
                 New York, NY 535022</p>
             </div>
@@ -378,8 +380,8 @@
             <figure class="px-10 pt-10">
               <img src="/images/call.png" alt="Shoes" class="rounded-xl" />
             </figure>
-            <div class="card-body items-center text-center p-4 mt-4">
-              <h2 class="card-title text-lg md:text-xl font-medium">Call Us</h2>
+            <div class="card-body items-center text-center px-4 pb-12 md:mt-4">
+              <h2 class="card-title text-lg md:text-xl font-semibold font-garamond">Call Us</h2>
               <p class="text-sm md:text-base text-secondary-color md:mb-6">+88 01750 00 00 00 <br>
                 +88 01750 00 00 00</p>
             </div>
@@ -388,8 +390,8 @@
             <figure class="px-10 pt-10">
               <img src="/images/email.png" alt="Shoes" class="rounded-xl" />
             </figure>
-            <div class="card-body items-center text-center p-4 mt-4">
-              <h2 class="card-title text-lg md:text-xl font-medium">Email Us</h2>
+            <div class="card-body items-center text-center px-4 pb-12 md:mt-4">
+              <h2 class="card-title text-lg md:text-xl font-semibold font-garamond">Email Us</h2>
               <p class="text-sm md:text-base text-secondary-color md:mb-6">info@gmail.com <br>
                 info@gmail.com</p>
             </div>
@@ -398,25 +400,72 @@
             <figure class="px-10 pt-10">
               <img src="/images/time.png" alt="Shoes" class="rounded-xl" />
             </figure>
-            <div class="card-body items-center text-center p-4 mt-4">
-              <h2 class="card-title text-lg md:text-xl font-medium">Working Hours</h2>
+            <div class="card-body items-center text-center px-4 pb-12 md:mt-4">
+              <h2 class="card-title text-lg md:text-xl font-semibold font-garamond">Working Hours</h2>
               <p class="text-sm md:text-base text-secondary-color md:mb-6">Mon-Fri: 9AM to 5PM <br>
                 Sunday: 9AM to 1 PM</p>
             </div>
           </div>
         </div>
-        <div class="flex flex-col items-center lg:items-start justify-between space-y-4 p-2 md:p-6 lg:p-10 lg:pl-0">
-          <input type="text" placeholder="Your Name" class="input w-5/6 bg-base-200 text-xs md:text-sm" />
-          <input type="email" placeholder="Your Email" class="input w-5/6 bg-base-200 text-xs md:text-sm" />
-          <input type="text" placeholder="Subject" class="input w-5/6 bg-base-200 text-xs md:text-sm"/>
-          <textarea placeholder="Your Message" class="textarea textarea-lg w-5/6 bg-base-200 text-xs md:text-sm h-28 md:h-40"></textarea>
-          <button class="btn btn-bloc w-5/6 text-xs md:text-sm bg-primary-btn text-white mt-40 md:px-6 hover:bg-yellow-700 ">Send Message</button>
+        <div
+          class="flex flex-col items-center lg:items-start justify-center space-y-4 p-2 md:p-6 lg:p-10 lg:pl-0 gap-2">
+          <input type="text" placeholder="Your Name" class="input w-5/6 bg-base-200 text-xs md:text-sm md:py-8" />
+          <input type="email" placeholder="Your Email" class="input w-5/6 bg-base-200 text-xs md:text-sm md:py-8" />
+          <input type="text" placeholder="Subject" class="input w-5/6 bg-base-200 text-xs md:text-sm md:py-8" />
+          <textarea placeholder="Your Message"
+            class="textarea textarea-lg w-5/6 bg-base-200 text-xs md:text-sm h-28 md:h-36 lg:h-52"></textarea>
+          <button
+            class="btn btn-bloc w-5/6 text-xs md:text-sm bg-primary-btn text-white mt-40 md:px-6 hover:bg-yellow-700 ">Send
+            Message</button>
         </div>
       </div>
     </section>
-    
   </section>
-
+  <!-- Footer -->
+  <footer class="bg-black text-footer-text text-sm py-6 lg:py-10">
+    <div class="container mx-auto p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+      <aside class="flex flex-col gap-4">
+        <img class="w-36 mb-5" src="/images/logo.png" alt="">
+        <p class="">There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+          alteration in some form, by injected humour.</p>
+      </aside>
+      <nav class="flex flex-col gap-2">
+        <h6 class="font-garamond text-xl font-semibold md:mb-8">Usefull Link</h6>
+        <a class="link link-hover">Homes</a>
+        <a class="link link-hover">Blog</a>
+        <a class="link link-hover">Cases</a>
+        <a class="link link-hover">About Us</a>
+        <a class="link link-hover">Contact Us</a>
+      </nav>
+      <nav class="flex flex-col gap-4">
+        <h6 class="font-garamond text-xl font-semibold  md:mb-8">Contact Now</h6>
+        <a class="link link-hover">
+          555 4th 5t NW, Washington <br>
+          DC 20530, United States</a>
+        <a class="link link-hover">+88 01750 000 000 <br>
+          +88 01750 000 000</a>
+        <a class="link link-hover">info@gmail.com <br>
+          info@gmail.com</a>
+      </nav>
+      <form>
+        <h6 class="font-garamond text-xl font-semibold md:mb-6">Subscribe</h6>
+        <fieldset class="form-control">
+          <label class="label">
+            <span class="mb-4">Subscribe for our latest & <br> Articles. We Won’t Give You <br> Spam Mails</span>
+          </label>
+          <div class="join">
+            <input type="text" placeholder="username@site.com" class="input input-bordered join-item w-40" />
+            <button class="btn bg-primary-btn border-none join-item">
+              <img src="/images/footer-vector.png" alt="">
+            </button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <p class="text-sm text-white text-center mt-16 px-10">© Legal Solution 2025, All right reserved <a
+        class="text-primary-btn font-semibold underline" href="https://www.facebook.com/piyasa.ahameda.jima"
+        target="_blank">Piash Ahmed</a></p>
+  </footer>
 </body>
 
 </html>
